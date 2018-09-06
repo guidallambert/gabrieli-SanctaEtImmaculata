@@ -50,7 +50,7 @@ htitle = "Sancta et immaculata Virginitas"
 % To transpose the whole score up a tone set to 'd'.  For down a tone, set to 'bes,' (note the comma) etc
 %  Everything is transposed, including key signatures etc (but prefatory staves are not affected).
 
-TranspositionInterval = g
+TranspositionInterval = g,
 
 
 
