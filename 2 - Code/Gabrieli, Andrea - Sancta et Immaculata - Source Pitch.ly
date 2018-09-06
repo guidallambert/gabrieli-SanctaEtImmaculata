@@ -31,7 +31,7 @@
 %
 
 \header {
-	title = "[TITLE HERE]"
+	title = "Sancta et immaculata Virginitas"
 	subtitle = "Motetto a V voci"
 	% poet = ""
 	% subsubtitle = "VIII Vocum"
@@ -41,7 +41,7 @@
 }
 
 hcomposer = "Gabrieli"
-htitle = "[SHORT TITLE GOES HERE]"
+htitle = "Sancta et immaculata Virginitas"
 
 %%% 1C - Transposition of the whole score.
 %
@@ -60,14 +60,14 @@ TranspositionInterval = c
 StaveAClef =  "treble"
 StaveALabel =  "CANTVS"
 
-StaveBClef =  "treble_8"
-StaveBLabel =  "ALTVS"
+StaveBClef =  "treble"
+StaveBLabel =  "QVINTVS"
 
-StaveCClef =  "treble_8"
-StaveCLabel =  "TENOR"
+StaveCClef =  "treble"
+StaveCLabel =  "ALTVS"
 
 StaveDClef =  "treble_8"
-StaveDLabel =  "QVINTVS"
+StaveDLabel =  "TENOR"
 
 StaveEClef =   "bass"
 StaveELabel =   "BASSVS"
@@ -101,7 +101,7 @@ global = {
 % Suggest something in the range of 35 (very slow) to 65 (very fast).
 % 45 is my default.
 
-midiTactus = #(ly:make-moment 55 1)
+midiTactus = #(ly:make-moment 45 1)
 
 % Playback sound:
 % I think ocarina sounds a bit like a chamber organ on most General MIDI

@@ -45,7 +45,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 % 3 - Score content: notes
 %%%%%%%%%%%%%%%%%%
 
-%\language "english"
+\language "english"
 
 StaveANotes = {
 
@@ -61,9 +61,33 @@ StaveANotes = {
   %   #(double-time-signature2 "timesig.mensural98" "3")
   % \time 3/2
 
+R\longa R\breve c''\breve a'2 c''1 c''2 d''4 ( c''4 bf'4
+  a'4 g'2 ) g'2   % 2
+  a'1 a'2. ( bf'4 c''2 ) c''2 c''2 a'2 a'1
+  r1 R\longa r1  c''\breve
+   a'2 c''1 c''2 d''4 ( c''4 bf'4 a'4 g'2 ) g'2 a'1 a'2 c''1 c''2
+  c''2 a'2 a'2 c''2 d''1 c''2. ( bf'4   % 4
+  a'4 g'4 a'1 ) f'2 c''2 c''2 bf'2. ( a'4 g'2 ) c''2 c''2 c''2 d''1.
+  d''2 c''2 f''2. e''4 e''2 d''4 ( c''4 c''1 ) \ficta b'2   % 5
+  c''2 g'2 g'2 g'2 a'1. a'2 g'1 r1 R\breve r2 c''2 c''2 c''2 f''1. f''2
+    % 6
+  e''1
+  r1 R\longa r2 g'2 g'2 g'2 bf'1. bf'2 a'2 bf'2. a'4 a'2   % 7
+  g'4 ( f'4 f'1 ) e'2 f'1
+  r1 R\longa r1 r2 a'1 g'2 a'2 c''1 % 8
+  b'2 c''2. c''4 d''2 c''2 c''2 c''2 a'2 a'1 bf'2 d''2 c''2 bf'2
+  a'1 a'2 d''2 g'2 r2 g'2 a'2 c''1 % 9
+  bf'2 a'1 g'2 g'2 e'2. ( d'4 e'2 ) f'2 r2 c''2 d''2 f''1 e''2
+  d''2. ( e''4 f''4 g''4 f''2 ) d''2 d''1 c''1 (
+  \ficta  b'2 ) c''\breve r\breve r2 f'1 g'2 bf'2 a'2 c''1
+   r1 R\longa
+   g'1 a'2 c''1 bf'2 a'1 bf'2. ( c''4 d''4 e''4 f''2. e''4 c''2
+  ) d''1 f''2. ( e''4 d''4 c''4 d''2 )   % 12
+  c''\maxima*1/4
+
   % \cadenzaOn
 
-    b'\maxima*1/4
+  %  b'\maxima*1/4
     \bar "|."
   %\cadenzaOff
 
@@ -72,23 +96,103 @@ StaveANotes = {
 StaveBNotes = {
 
   % clef c3  % tweak / uncomment for debugging - this should override the clef in the score block
+  r1 c''\breve a'2 c''1 c''2
+  d''4 ( c''4 bf'4 a'4 g'2 ) g'2 a'2. ( bf'4 c''2 ) a'1 f''1 f''1 e''2
+    % 2
+  f''1 r1 R\longa c''\breve a'2 c''1 c''2 d''4 ( c''4 bf'4 a'4 g'2 )
+  g'2   % 3
+  a'2. ( bf'4 c''1 ) g'2 a'2 f'2 f'2 c''\breve. r1 f''1 e''2 f''1
+   f''2 g''4 ( f''4 e''4 d''4   % 4
+  c''2 ) c''2 c''2 a'1 a'2 d''2 d''2 c''2 g'2 g'2 g'2 bf'1. bf'2 a'2
+  c''2. c''4 c''2 a'2 a'2 g'\breve % 5
+   r1 R\breve r2 c''2 c''2 c''2 d''1. d''2 c''1 r2 c''2 c''2 c''2
+  a'1. % 6
+   g'2 g'1 r2 c''2 c''2 c''2 f''1. f''2 e''2 e''2. e''4 e''2 d''1.
+  d''2 d''2 d''2. c''4 c''2   % 7
+  bf'2. ( a'4 g'2 ) g'2 a'1 r1 R\longa r1 c''1 c''2 c''2 d''2 e''2   % 8
+  f''2. f''4 e''2 g''1 f''1 e''2 f''1 r\breve r2 c''1 d''2 f''2 e''2
+  d''2. ( e''4 f''4 g''4 f''2 )   % 9
+  d''2 d''1 c''1 ( \ficta b'2 ) c''1 r1 r2 g'2 a'1 c''1 bf'1 a'1 R\breve
+  d''1 e''2 g''1 g''2 c''2 f''1 e''2 d''1 c''1 f'1 g'1 bf'2. a'4 g'2
+  f'2 c''2 c''2. (   % 11
+   bf'8 a'8 g'2. f'4 f'1 e'2 ) f'\breve r2 c''2 d''2 f''1 d''2 c''2
+  f''2. ( e''4 d''1 ) d''2 bf'1   % 12
+  a'\maxima*1/4
 }
 StaveCNotes = {
 
   % clef c4  % tweak / uncomment for debugging - this should override the clef in the score block
+  f'\breve e'2 f'1 f'2
+  a'4 ( g'4 f'4 e'4 d'2 ) d'2 e'1 f'1. f'2 f'1 bf1 c'2 c'1 % 2
+   c'2 f'2 f'2 g'2 a'2 f'1 e'2 f'2 f'1 g'1 f'2 c'2 f'2. ( g'4 a'2 )
+  a'2 d'1 r1   % 3
+  f'\breve e'2 f'1 d'2 e'2 e'2 f'2. ( g'4 a'1 ) g'2 f'4 ( g'4 a'4 bf'4
+  c''2. bf'4 a'2 ) a'2 a'2 g'1   % 4
+  r2 c'2 c'2 c'2 f'1. f'2 e'1 e'1 f'2 f'2 g'2 f'2 f'2 a'2. g'4 g'2 f'2.
+  ( e'4 d'2 ) d'2   % 5
+  e'\breve f'2 f'2 f'2 c''1 g'2 a'1 bf'2. bf'4 g'2 f'1 e'2 f'2. ( g'4
+  a'1 ) r1   % 6
+  R\breve f'2. e'4 e'1 d'4 ( c'4 c'1 ) \ficta b2 c'2 c'2 c'2 c'2 g'2. g'4 f'2
+  f'2. f'4 f'2 f'2 f'2   % 7
+  d'1 r1 c'1 c'2 c'2 d'2 e'2 f'2. f'4 e'2 g'1 f'1 e'2 f'1
+  R\breve   % 8
+  f'1 g'1 bf'2 a'2 g'2 g'2 f'2 f'4 ( e'4 d'4 c'4 bf2 ) f'1 r1 r2 f'1
+  g'2 bf'1 a'1   % 9
+  g'1 f'1 d'1 c'2. ( bf8 a8 g2 d'2 ) c'1
+  R\breve f'1. a'2 bf'1 a'1
+  g'2 g'2. ( f'4 e'4 d'4 e'2 ) g'2 a'2. ( g'8 f'8 g'1 ) f'1 r2 c'2 d'2
+  f'1 ef'2 d'2 d'1 d'2 e'2. ( d'4   % 11
+  c'4 g4 bf4 c'4 d'4 c'4 a4 bf4 c'2 ) c'2 c'1 c'2 f'1 f'2 d'2. ( e'4
+  f'2 ) f'2. ( g'4 a'1 ) f'2 d'2. ( e'4 f'1 )   % 12
+  f'\maxima*1/4
 
 }
-StaveENotes = {  % QCed against source
 
-  % clef c4  % tweak / uncomment for debugging - this should override the clef in the score block
-
-}
 StaveDNotes = { 
 
   % clef c4  % tweak / uncomment for debugging - this should override the clef in the score block
+    R\longa*3
+  r1 c'\breve a2 c'1 c'2 d'4 ( c'4 bf4 a4 g2 ) g2 a2. ( bf4 c'2
+  ) a1 f'1 f'1 e'2   % 3
+  f'2 f2 f4 ( g4 a4 bf4 c'2 ) a2 bf1 c'1. a2 c'1 c'1 f4 ( g4 a4 bf4 c'2
+  ) c'2 f'2 d'2 r2 c'1 % 4
+   f'1 f'2 c'1 r1 c'1 c'2 c'2 bf2. ( a4 g2 ) bf2 f1 c'2. c'4 f1 g2
+  g2   % 5
+  g1 r2 c'2 c'2 c'2 f'1. e'2 c'2 f'2. f'4 f2 bf2. ( a4 g1 ) a1 f1 c'2
+  c'2   % 6
+  c'2 e'1 e'2 d'2 c'2. c'4 c'2 a1. f2 g1 r2 g2 g2 g2 d'2. d'4 d'2 bf2.
+  f4 f2   % 7
+  bf2 bf2 c'1 r2 a1 g2 a2 c'1 \ficta b2 c'2. c'4 d'2 d'2 bf2 bf2 a2 f'2 f'2
+  e'2 d'2 c'2   % 8
+  d'2. d'4 c'2 ef'2 d'2 f'2 c'2 c'1 d'2 f'2 ef'2 d'4 ( e'4 f'4 c'4 d'4
+  e'4 f'2 ) f'2. ( e'4 d'2 ) e'2 g'1 c'1   % 9
+  R\breve g1. a2 c'2 bf2 a2 g2 f2 a2. ( bf4 c'2 ) d'2 bf4 ( c'4 d'4 e'4
+  f'1 ) f'2 f'2. ( e'4
+  d'1 ) c'2 c'1 e'2 f'2 d'2 c'2. ( bf4 a2 ) a1 c'2 bf4 ( c'4 d'2 ) c'1
+  f1 g2 bf1 a2   % 11
+  g1 a2 f2 g1 f2 a1 bf2 d'2 c'2 bf1 f2. ( g4 a1. ) a2 bf\breve   % 12
+  c'\maxima*1/4
 
 }
-StaveFNotes = {  }
+StaveENotes = { 
+
+  % clef c4  % tweak / uncomment for debugging - this should override the clef in the score block
+  R\longa*3
+  f\breve e2 f1 f2 a4 ( g4 f4 e4 d2 ) d2 e1 f1. f2 f1 bf,1 c1   % 3
+  R\longa r1 f\breve e2 f1 f2 a4 ( g4 f4 e4 d2 ) d2 e1   % 4
+  f1. f2 f1 bf,1 c\breve R\longa R\breve   % 5
+  c1 c2 c2 f2. ( e4 d2 ) f2 c1 f2. f4 bf,\breve c2 c2 f1 r2 f2 f2 f2   % 6
+  c'1. c'2 bf2 a2. a4 a2 f2. ( e4 d2 ) d2 c\breve
+  R\longa  R\breve
+  f1 f2 e2 d2 c2 d2. d4 c2 c'2 bf2. ( a4 g2 ) g2 f1
+  R\breve R\longa f1. g2 bf2 a2 g2 f2. (  e4 d1 ) c2 g1 f1   % 9
+  R\breve r1 c1. d2 f2 e2 d1 a1 bf2 d'1 d'2 bf1 f2 f2
+  g1 c\breve r1 c1 d2 f1 e2 d1 r1 bf,\breve c1   % 11
+  ef1 d1 c1 f1. bf,2 f1 bf,2 bf,1 bf,2 f2. ( e4 d2. c4 bf,\breve )   % 12
+  f\maxima*1/4
+
+}
+StaveFNotes = { }
 StaveGNotes = {  }
 StaveHNotes = {  }
 
@@ -108,25 +212,93 @@ StaveHNotes = {  }
 
 StaveALyrics = \lyricmode {  
 
+    Sanc -- ta et im -- ma -- cu -- la -- ta __ Vir -- gi -- ni -- tas,
+    Sanc -- ta et im -- ma -- cu -- la -- ta,
+    Sanc -- ta et im -- ma -- cu -- la -- ta __ Vir -- gi -- ni -- tas, __
+    Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+    Qui -- bus te lau -- di -- bus,
+    Qui -- bus te lau -- di -- bus,
+    Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+    Qui -- a quem coe -- li ca -- pe -- re non po -- te -- rant,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti,
+    tu -- o gre -- mi -- o,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti.
+
 }
 StaveBLyrics = \lyricmode {  
+  	Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+	Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+	Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+	Qui -- bus te lau -- di -- bus,
+	Qui -- bus te lau -- di -- bus,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+	ef -- fe -- rem nes -- ci -- o,
+	Qui -- a quem coe -- li ca -- pe -- re non po -- te -- rant,
+	tu -- o gre -- mi -- o __ con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti.
+
 
 }
 StaveCLyrics = \lyricmode {
 
+    Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+    Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+    Vir -- gi -- ni -- tas,
+    Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+    Qui -- bus te lau -- di -- bus,
+    Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+    Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o, __
+    ef -- fe -- rem nes -- ci -- o,
+    Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+    Qui -- a quem coe -- li ca -- pe -- re non po -- te -- rant,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti,
+    tu -- o gre -- mi -- o con -- tu -- li -- sti.
+
 
 }
 StaveDLyrics = \lyricmode {
-
+  	Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+	Vir -- gi -- ni -- tas,
+	Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+        Qui -- a quem coe -- li ca -- pe -- re non po -- te -- rant,
+	Qui -- a quem coe -- li ca -- pe -- re non po -- te -- rant,
+	tu -- o gre -- mi -- o __ con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti,
+	con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o __ con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti.
 
 }
 StaveELyrics = \lyricmode {
+	Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+	Sanc -- ta et im -- ma -- cu -- la -- ta Vir -- gi -- ni -- tas,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+	Qui -- bus te lau -- di -- bus ef -- fe -- rem nes -- ci -- o,
+	Qui -- a quem coe -- li ca -- pe -- re non po -- te -- rant,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti,
+	tu -- o gre -- mi -- o,
+	tu -- o gre -- mi -- o con -- tu -- li -- sti,
+	con -- tu -- li -- sti.
 
 
 }
-StaveFLyrics = \lyricmode {
-
-}
+StaveFLyrics = \lyricmode { A }
 StaveGLyrics = \lyricmode { A }
 StaveHLyrics = \lyricmode { A }
 
@@ -136,19 +308,17 @@ StaveHLyrics = \lyricmode { A }
 	\fill-line {
 		\column {
                         \vspace #1
-			\line { Prima Pars }
-			\line { \italic { Tranlation goes here }}
+			\line { \italic { O holy and immaculate virginity,}}
+			\line { \italic { By what praises I may extol thee I know not:}}
+			\line { \italic { For he whom the heavens could not contain}}
+			\line { \italic { Thou hast born in thy womb. } }
 			\vspace #1
-			\line { Secunda Pars}
-			\line { \italic { Trahslation goes here }}
-
-			\vspace #1
-			\line { Text source goes here }
-
+			\line { 6th Responsory at Matins of Christmas; also used for Marian feasts.  }
 
 		}
 	}
 }
+
 
 
 %%%%%%%%%%%%%%%%%%
@@ -259,8 +429,8 @@ PrefStaveA = \markup {
                 \new MensuralVoice {
                     \set Staff.instrumentName=\StaveALabel
                     \PrefatorySettings
-                    \clef "petrucci-c1"
-                    g'1
+                    \clef "petrucci-g"
+                    c''\breve
                      \bar"" \skip1
 		}  \layout {\PrefatoryLayout}
 	}
@@ -270,8 +440,8 @@ PrefStaveB = \markup {
                 \new MensuralVoice {
                     \set Staff.instrumentName=\StaveBLabel
                     \PrefatorySettings
-                    \clef "petrucci-c3"
-                    g1
+                    \clef "petrucci-g"
+                    c''\breve
                      \bar"" \skip1
 		}  \layout {\PrefatoryLayout}
 	}
@@ -281,8 +451,8 @@ PrefStaveC = \markup {
                 \new MensuralVoice {
                     \set Staff.instrumentName=\StaveCLabel
                     \PrefatorySettings
-                    \clef "petrucci-c4"
-                    d2
+                    \clef "petrucci-c2"
+                    f'\breve
                      \bar"" \skip1
 		}  \layout {\PrefatoryLayout}
 	}
@@ -292,8 +462,8 @@ PrefStaveD = \markup {
                 \new MensuralVoice {
                     \set Staff.instrumentName=\StaveDLabel
                     \PrefatorySettings
-                    \clef "petrucci-c4"
-                    g2
+                    \clef "petrucci-c3"
+                    c'\breve
                      \bar"" \skip1
 		}  \layout {\PrefatoryLayout}
 	}
@@ -303,8 +473,8 @@ PrefStaveE = \markup {
           \new MensuralVoice {
                     \set Staff.instrumentName=\StaveELabel
                     \PrefatorySettings
-                    \clef "petrucci-f4"
-                    g,1
+                    \clef "petrucci-f3"
+                    f\breve
                      \bar"" \skip1
 		}  \layout {\PrefatoryLayout}
 	}
